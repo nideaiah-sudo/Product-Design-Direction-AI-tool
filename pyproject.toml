@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "standard-parts-ai"
+version = "0.1.0"
+description = "离线标准件（螺丝）STEP 生成工具"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "cadquery>=2.4.0",
+    "PyPDF2>=3.0.0",
+    "pymupdf>=1.22.0",
+    "pytesseract>=0.3.0",
+    "pillow>=9.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pyinstaller>=6.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,11 @@
+# 标准件生成 AI 工具依赖
+# 安装: pip install -r requirements.txt
+
+cadquery>=2.4.0
+PyPDF2>=3.0.0
+pymupdf>=1.22.0
+pytesseract>=0.3.0
+pillow>=9.0.0
+
+# 开发/打包依赖
+pyinstaller>=6.0

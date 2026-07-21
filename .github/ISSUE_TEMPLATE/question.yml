@@ -1,0 +1,21 @@
+name: ❓ 提问
+description: 使用过程中有疑问
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        如果你在使用工具时遇到疑问，请在这里提问。也欢迎直接发送邮件至 wxndxc@qq.com。
+  - type: textarea
+    id: question
+    attributes:
+      label: 你的问题
+      description: 请详细描述你的疑问
+      placeholder: 例如：如何打包为 EXE？
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 相关背景
+      description: 你的操作系统、工具版本、已尝试的步骤等

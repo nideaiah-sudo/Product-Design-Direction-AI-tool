@@ -1,0 +1,32 @@
+name: 💡 功能建议
+description: 提出新的功能或改进建议
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你的建议！请描述清楚你希望新增的功能或改进点。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题/需求描述
+      description: 你现在遇到了什么问题，或希望解决什么需求？
+      placeholder: 例如：希望能支持导出更多格式的标准件文件。
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: 期望的解决方案
+      description: 你希望这个功能如何工作？
+      placeholder: 例如：在生成界面增加导出 Parasolid 格式选项。
+  - type: textarea
+    id: alternative
+    attributes:
+      label: 备选方案
+      description: 你有没有想到其他替代方案？
+  - type: textarea
+    id: additional
+    attributes:
+      label: 其他信息
+      description: 补充说明、参考链接、截图等

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📧 发送邮件
+    url: mailto:wxndxc@qq.com
+    about: 如果你不方便使用 GitHub Issues，可以通过邮件联系我们。

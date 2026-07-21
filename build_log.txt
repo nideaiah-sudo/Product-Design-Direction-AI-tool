@@ -1,0 +1,97 @@
+228 INFO: PyInstaller: 6.21.0, contrib hooks: 2026.6
+228 INFO: Python: 3.14.4
+251 INFO: Platform: Windows-10-10.0.19045-SP0
+251 INFO: Python environment: C:\Python314
+251 INFO: wrote D:\000a\standard-parts-ai\standard-parts-ai.spec
+10984 INFO: Module search paths (PYTHONPATH):
+['D:\\000a\\standard-parts-ai',
+ 'D:\\000a\\standard-parts-ai\\src',
+ 'C:\\Python314\\python314.zip',
+ 'C:\\Python314\\DLLs',
+ 'C:\\Python314\\Lib',
+ 'C:\\Python314',
+ 'C:\\Users\\seeed\\AppData\\Roaming\\Python\\Python314\\site-packages',
+ 'C:\\Users\\seeed\\.agents\\skills\\cad-spec-gen-main\\src',
+ 'C:\\Users\\seeed\\AppData\\Roaming\\Python\\Python314\\site-packages\\win32',
+ 'C:\\Users\\seeed\\AppData\\Roaming\\Python\\Python314\\site-packages\\win32\\lib',
+ 'C:\\Users\\seeed\\AppData\\Roaming\\Python\\Python314\\site-packages\\Pythonwin',
+ 'C:\\Python314\\Lib\\site-packages',
+ 'D:\\000a\\standard-parts-ai\\src']
+11969 INFO: Appending 'binaries' from .spec
+11981 INFO: Appending 'datas' from .spec
+12285 INFO: checking Analysis
+14472 INFO: checking PYZ
+15066 INFO: checking PKG
+15068 INFO: Bootloader C:\Users\seeed\AppData\Roaming\Python\Python314\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+15068 INFO: checking EXE
+15133 INFO: checking COLLECT
+15356 INFO: Removing dir D:\000a\standard-parts-ai\dist\standard-parts-ai
+Traceback (most recent call last):
+  File "C:\Users\seeed\AppData\Roaming\Python\Python314\site-packages\PyInstaller\building\utils.py", line 394, in _make_clean_directory
+    os.remove(path)
+    ~~~~~~~~~^^^^^^
+PermissionError: [WinError 5] ¾Ü¾ø·ÃÎÊ¡£: 'D:\\000a\\standard-parts-ai\\dist\\standard-parts-ai'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\seeed\AppData\Roaming\Python\Python314\site-packages\PyInstaller\__main__.py", line 321, in <module>
+    run()
+    ~~~^^
+  File "C:\Users\seeed\AppData\Roaming\Python\Python314\site-packages\PyInstaller\__main__.py", line 215, in run
+    run_build(pyi_config, spec_file, **vars(args))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\seeed\AppData\Roaming\Python\Python314\site-packages\PyInstaller\__main__.py", line 70, in run_build
+    PyInstaller.building.build_main.main(pyi_config, spec_file, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\seeed\AppData\Roaming\Python\Python314\site-packages\PyInstaller\building\build_main.py", line 1275, in main
+    build(specfile, distpath, workpath, clean_build)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\seeed\AppData\Roaming\Python\Python314\site-packages\PyInstaller\building\build_main.py", line 1213, in build
+    exec(code, spec_namespace)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\000a\standard-parts-ai\standard-parts-ai.spec", line 45, in <module>
+    coll = COLLECT(
+        exe,
+    ...<5 lines>...
+        name='standard-parts-ai',
+    )
+  File "C:\Users\seeed\AppData\Roaming\Python\Python314\site-packages\PyInstaller\building\api.py", line 1150, in __init__
+    self.__postinit__()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\seeed\AppData\Roaming\Python\Python314\site-packages\PyInstaller\building\datastruct.py", line 184, in __postinit__
+    self.assemble()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\seeed\AppData\Roaming\Python\Python314\site-packages\PyInstaller\building\api.py", line 1162, in assemble
+    _make_clean_directory(self.name)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\seeed\AppData\Roaming\Python\Python314\site-packages\PyInstaller\building\utils.py", line 396, in _make_clean_directory
+    _rmtree(path)
+    ~~~~~~~^^^^^^
+  File "C:\Users\seeed\AppData\Roaming\Python\Python314\site-packages\PyInstaller\building\utils.py", line 421, in _rmtree
+    shutil.rmtree(path)
+    ~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\shutil.py", line 852, in rmtree
+    _rmtree_impl(path, dir_fd, onexc)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\shutil.py", line 705, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\shutil.py", line 701, in _rmtree_unsafe
+    os.unlink(fullname)
+    ~~~~~~~~~^^^^^^^^^^
+PermissionError: [WinError 5] ¾Ü¾ø·ÃÎÊ¡£: 'D:\\000a\\standard-parts-ai\\dist\\standard-parts-ai\\_internal\\cadquery_ocp.libs\\deflate-0c8d7e40b4512d86969e2003a7d8bede.dll'
+Ö´ÐÐ´ò°üÃüÁî: C:\Python314\python.exe -m PyInstaller --onedir --windowed -y --name standard-parts-ai --collect-all casadi --collect-all cadquery --add-binary C:\Users\seeed\AppData\Roaming\Python\Python314\site-packages\casadi\_casadi.pyd;casadi --add-data D:\000a\standard-parts-ai\tesseract;tesseract D:\000a\standard-parts-ai\src\standard_parts_ai\gui_main.py
+Traceback (most recent call last):
+  File "D:\000a\standard-parts-ai\build_exe.py", line 57, in <module>
+    main()
+    ~~~~^^
+  File "D:\000a\standard-parts-ai\build_exe.py", line 52, in main
+    subprocess.run(cmd, check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['C:\\Python314\\python.exe', '-m', 'PyInstaller', '--onedir', '--windowed', '-y', '--name', 'standard-parts-ai', '--collect-all', 'casadi', '--collect-all', 'cadquery', '--add-binary', 'C:\\Users\\seeed\\AppData\\Roaming\\Python\\Python314\\site-packages\\casadi\\_casadi.pyd;casadi', '--add-data', 'D:\\000a\\standard-parts-ai\\tesseract;tesseract', 'D:\\000a\\standard-parts-ai\\src\\standard_parts_ai\\gui_main.py']' returned non-zero exit status 1.
